@@ -100,8 +100,11 @@
     border-color: #a5fb55;
     border-width: 1.5px;
     border-radius: 40px;
-    
+
     padding: 24px 50px;
+    font-family: "Inter";
+    font-weight: 700;
+    font-style: normal;
     font-size: 15px;
     font-weight: bold;
     text-decoration: none;

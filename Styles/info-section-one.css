@@ -1,0 +1,134 @@
+.download-section,
+.about-us-section,
+.features-section {
+   background-color: white;
+   width: 1400px;
+   height: 660px;
+   border-radius: 50px;
+   margin-left: 143px;
+   margin-bottom: 100px;
+}
+
+.space {
+ height: 100px;
+}
+
+.about-us-div,
+.download-div,
+.features-section-div {
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .info-section-1-di {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   column-gap: 2px;
+   margin-top: 20px;
+   margin-right: 10px;
+ }
+
+.information-title {
+   font-family: "Inter";
+   font-size: 64px;
+   font-weight: 700;
+   font-style: normal;
+   padding-left: 30px;
+   width: 320px;
+   margin-top: 120px;
+   line-height: 67px;
+}
+
+.information-subtitle {
+   font-family: Arial Rounded MT Bold;
+   font-size: 22px;
+   padding-left: 40px;
+   color: rgb(186, 186, 186);
+   width: 320px;
+   margin-top: 40px;
+}
+
+.feature-card {
+   background-color: rgb(231, 251, 255);
+   border-radius: 33px;
+   width: 290px;
+   height: 272px;
+   border: solid;
+   border-color:  rgb(231, 251, 255); 
+   border-width: 25px; 
+   margin: 20px;
+}
+
+.features-icon {
+   font-size: 30px;
+   background-color: white;
+   border-radius: 50px;
+   width: 50px;
+   border: solid;
+   border-color: white;
+   border-width: 7px;
+   text-align: center;
+   margin-bottom: 30px;
+}
+
+.features-title {
+   font-family: "Inter";
+    font-size: 22px;
+    font-weight: 700;
+    font-style: normal;
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.feature-text {
+   font-family: Arial Rounded MT Bold;
+   font-size: 16px;
+   color: rgba(0, 0, 0, 0.667);
+   width: 200px;
+   margin-bottom: 100px;
+}
+
+.feature-i-card {
+   background-color: rgb(0, 0, 0);
+   border-radius: 30px;
+   width: 290px;
+   height: 272px;
+   border: solid;
+   border-color:  black; 
+   border-width: 25px;  
+   margin: 20px;
+}
+
+.feature-i-icon {
+   font-size: 30px;
+   width: 50px;
+   background-color: #e8fb55;
+   border-radius: 50px;
+   border: solid;
+   border-color: #e8fb55;
+   border-width: 7px;
+   text-align: center;
+   margin-bottom: 30px;
+}
+
+.features-i-title {
+   font-family: "Inter";
+   font-size: 22px;
+   font-weight: 700;
+   font-style: normal;
+   width: 180px;
+   color: white;
+   margin-bottom: 20px;
+}
+
+.feature-i-text {
+   font-family: Arial Rounded MT Bold;
+   font-size: 16px;
+   color: white;
+   width: 200px;
+}
+
+.feature-cards {
+   margin-bottom: 70px;
+}
+

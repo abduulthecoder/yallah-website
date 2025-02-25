@@ -1,0 +1,103 @@
+.hero-section {
+    padding-left: 70px;
+    padding-top: 220px;
+    padding-bottom: 100px;
+    color: white;
+    height: 700px;
+    transition: color 1.5s;
+    position: absolute;
+    top: 0;
+    left: 4%;
+  }
+
+  .stock-image-hero {
+    max-width: 100%;
+  }
+
+  .hero-div {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+    max-width: 100%;
+  }
+
+  .hero-grand {
+    position: relative;
+    margin-bottom: -300px;
+  }
+
+  .hd {
+    margin-right: 250px;
+  }
+
+  .description {
+    font-family: Arial Rounded MT Bold;
+    font-size: 20px;
+    line-height: 22px;
+    width: 300px;
+    margin-bottom: 50px;
+    padding-left: 10px;
+  }
+
+  h1 {
+    font-family: "Inter";
+    font-size: 64px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 80px;
+    max-width: 300px;
+    margin-top: 90px;
+    margin-bottom: 70px;
+  }
+
+  .hero-title-2 {
+    font-family: "Inter";
+    font-size: 34px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 47px;
+    width: 320px;
+    margin-top: 10px;
+    margin-bottom: 70px;
+    margin-right: 50px;
+  }
+
+  .hero-3 {
+    margin-top: 120px;
+    margin-left: 55px;
+  }
+
+  .app-image {
+    width: 347px;
+    height: 680px;
+    margin-right: 120px;
+  }
+
+  .gradient {
+    font-family: "Inter";
+    font-size: 64px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 77px;
+    background: linear-gradient(to right, #24af5e, #bef7c5,#bcefd1, #24af5e);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    
+  }
+
+  .gradient-2 {
+    font-family: "Inter";
+    font-size: 34px;
+    font-weight: 700;
+    font-style: normal;
+    background: linear-gradient(to right, #24af5e, #bef7c5,#bcefd1, #24af5e);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+
+
+
+
+
+

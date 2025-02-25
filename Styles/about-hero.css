@@ -1,0 +1,31 @@
+.about-us-title-2 {
+    font-family: "Inter";
+    font-size: 74px;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    margin-right: 30px;
+    position: absolute;
+    top: 80%;
+    left: 74%;
+}
+
+.stock-image {
+    max-width: 100%;
+    border-radius: 40px;
+    padding: 15px;
+}
+
+.about-hero {
+    position: relative;
+}
+
+.gradient-3 {
+    font-family: "Inter";
+    font-size: 74px;
+    font-weight: 700;
+    font-style: normal;
+    background: linear-gradient(to right, #24af5e, #bef7c5,#bcefd1, #24af5e);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }

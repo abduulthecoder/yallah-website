@@ -11,7 +11,7 @@
     line-height: 65px;
     color: black;
     text-align: center;
-    margin-right: 130px;
+    margin-right: 120px;
     width: 400px;
 }
 
@@ -22,7 +22,7 @@
     color: rgb(186, 186, 186);
     line-height: 23px;
     width: 300px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 
@@ -56,5 +56,5 @@
 
 .download-buttons {
     margin-top: 40px;
-    margin-right: 20px;
+    margin-right: -50px;
 }

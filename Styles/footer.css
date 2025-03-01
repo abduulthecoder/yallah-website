@@ -1,0 +1,178 @@
+footer {
+    background-color: rgb(26, 26, 26); 
+    height: 400px;
+    color: white;
+    width: 100%;
+}
+
+.footer-div {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer-div-2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 134px;
+}
+
+.footer-title {
+    font-family: "Inter";
+    font-size: 1.25rem;
+    font-size: clamp(1.25rem, 0.38990825688073394rem + 3.669724770642202vw, 2.5rem);    
+    font-weight: 700;
+    font-style: normal;
+    width: 270px;
+    line-height: 51px;
+}
+
+.footer-subtitle {
+    font-family: "Inter";
+    font-size: 12px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.footer-sub {
+    font-family: "Inter";
+    font-size: 50px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.footer-contact {
+    font-family: "Inter";
+    font-size: 15px;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 34px;
+}
+
+
+.footer-SM {
+    font-family: "Inter";
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+    width: 470px;
+    color: white;
+}
+
+.fa {
+    margin-right: 7px;
+    color: rgba(255, 255, 255, 0.565);
+}
+
+.ri-twitter-x-line {
+    margin-right: 8px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.565);
+}
+
+.footer-sub a {
+    font-family: "Inter";
+    font-size: 12px;
+    font-weight: 700;
+    font-style: normal; 
+    text-decoration: none;
+    color: white;
+}
+
+.footer-sub a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .footer-div {
+        display: inline;
+    }
+
+    .footer-title {
+        margin-bottom: 30px;
+        line-height: 32px;
+        margin-top: 20px;
+    }
+
+    .footer-sub {
+        margin-top: 0px;
+    }
+
+    .footer-div-2 {
+        display: inline;
+        padding-left: 22px;
+    }
+
+    .footer-subtitle {
+        margin-top: 140px;
+    }
+
+    footer {
+        height: 650px;
+        padding-left: 22px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .footer-div {
+        display: inline;
+    }
+
+    .footer-title {
+        margin-bottom: 30px;
+        line-height: 32px;
+        margin-top: 20px;
+    }
+
+    .footer-sub {
+        margin-top: 0px;
+    }
+
+    .footer-div-2 {
+        display: inline;
+        padding-left: 22px;
+    }
+
+    .footer-subtitle {
+        margin-top: 140px;
+    }
+
+    footer {
+        height: 650px;
+        padding-left: 22px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) { 
+
+
+    .footer-title {
+        margin-bottom: 30px;
+        line-height: 32px;
+        margin-top: 20px;
+    }
+
+    .footer-sub {
+        margin-top: 0px;
+    }
+
+
+    .footer-subtitle {
+        margin-top: 200px;
+    }
+
+    footer {
+        height: 650px;
+        padding-left: 22px;
+        width: 100%;
+    }
+}
+
+
+

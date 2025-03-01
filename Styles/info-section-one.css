@@ -1,0 +1,279 @@
+.download-section,
+.about-us-section,
+.features-section {
+   background-color: white;
+   max-width: 1400px;
+   height: 660px;
+   border-radius: 50px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 100px;
+}
+
+.space {
+ height: 100px;
+}
+
+.about-us-div,
+.download-div,
+.features-section-div {
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .info-section-1-di {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 2px;
+   margin-top: 20px;
+   margin-right: 10px;
+   grid-auto-rows: 1fr;
+ }
+
+.information-title {
+   font-family: "Inter";
+   font-size: 1.875rem;
+   font-size: clamp(1.875rem, 0.4128440366972477rem + 6.238532110091743vw, 4rem);
+   font-weight: 700;
+   font-style: normal;
+   padding-left: 30px;
+   width: 320px;
+   margin-top: 120px;
+   line-height: 67px;
+}
+
+.information-subtitle {
+   font-family: Arial Rounded MT Bold;
+   font-size: 22px;
+   padding-left: 40px;
+   color: rgb(186, 186, 186);
+   width: 320px;
+   margin-top: 40px;
+}
+
+.feature-card {
+   background-color: rgb(231, 251, 255);
+   border-radius: 33px;
+   height: 282px;
+   border: solid;
+   border-color:  rgb(231, 251, 255); 
+   border-width: 25px; 
+   margin: 20px;
+   padding: 20px;
+}
+
+.features-icon {
+   font-size: 30px;
+   background-color: white;
+   border-radius: 50px;
+   max-width: 50px;
+   border: solid;
+   border-color: white;
+   border-width: 7px;
+   text-align: center;
+   margin-bottom: 30px;
+}
+
+.features-title {
+   font-family: "Inter";
+    font-size: 22px;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+.feature-text {
+   font-family: Arial Rounded MT Bold;
+   font-size: 16px;
+   color: rgba(0, 0, 0, 0.667);
+   max-width: 200px;
+   margin-bottom: 100px;
+}
+
+.feature-i-card {
+   background-color: rgb(0, 0, 0);
+   border-radius: 30px;
+   height: 282px;
+   border: solid;
+   border-color:  black; 
+   border-width: 25px;  
+   margin: 20px;
+}
+
+.feature-i-icon {
+   font-size: 30px;
+   width: 50px;
+   background-color: #e8fb55;
+   border-radius: 50px;
+   border: solid;
+   border-color: #e8fb55;
+   border-width: 7px;
+   text-align: center;
+   margin-bottom: 30px;
+}
+
+.features-i-title {
+   font-family: "Inter";
+   font-size: 22px;
+   font-weight: 700;
+   font-style: normal;
+   width: 180px;
+   color: white;
+   margin-bottom: 20px;
+}
+
+.feature-i-text {
+   font-family: Arial Rounded MT Bold;
+   font-size: 16px;
+   color: white;
+   width: 200px;
+}
+
+.feature-cards {
+   margin-bottom: 70px;
+}
+
+
+@media only screen and (max-width: 600px) {
+   .download-section,
+   .about-us-section {
+      margin: 10px;
+      margin-top: 20px;
+      height: 1000px;
+   } 
+
+   .features-section {
+      margin: 10px;
+      margin-top: 20px;
+      height: 1550px;
+      margin-bottom: 102px;
+   }
+
+   .info-section-1-di {
+      display: block;
+   }
+
+
+   .download-div,
+   .about-us-div,
+   .features-section-div {
+      display: block;
+   }
+
+   .information-title {
+      text-align: center;
+      width: 45%;
+      line-height: 45px;
+      margin-left: 130px;
+      padding-top: 20px;
+   }
+
+   .information-subtitle {
+      margin-left: 100px;
+      text-align: center;
+   }
+
+}  
+
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+   .about-us-section {
+      margin: 10px;
+      margin-top: 20px;
+      height: 1000px;
+   } 
+
+   .features-section {
+      margin: 10px;
+      margin-top: 20px;
+      height: 1550px;
+      margin-bottom: 102px;
+   }
+
+   .download-section {
+      margin: 10px;
+      margin-top: 20px;
+      height: 1117px;
+   }
+
+   .info-section-1-di {
+      display: block;
+   }
+
+
+   .download-div,
+   .about-us-div,
+   .features-section-div {
+      display: block;
+   }
+
+   .information-title {
+      text-align: center;
+      width: 45%;
+      line-height: 45px;
+      margin-left: 170px;
+      padding-top: 20px;
+   }
+
+   .information-subtitle {
+      margin-left: 170px;
+      text-align: center;
+   }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+   .about-us-section {
+      margin: 10px;
+      margin-top: 20px;
+      height: 800px;
+   } 
+
+   .features-section {
+      margin: 10px;
+      margin-top: 20px;
+      margin-bottom: 102px;
+   }
+
+   .download-section {
+      margin: 10px;
+      margin-top: 20px;
+   }
+
+   .information-title {
+      width: 200px;
+      font-size: 30px;
+      line-height: 42px;
+   }
+
+   .feature-text {
+      font-size: 13px;
+   }
+   
+   .info-section-1-di {
+      margin-left: 22px;
+   }
+
+   .information-subtitle {
+      width: 200px;
+      font-size: 20px;
+      line-height: 25px;
+   }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1400px) {
+   .information-title {
+      width: 200px;
+      font-size: 45px;
+      line-height: 50px;
+   }
+
+   .download-section,
+   .about-us-section {
+      margin: 10px;
+   }
+
+   .features-section {
+      margin: 10px;
+      margin-bottom: 102px;
+   }
+}

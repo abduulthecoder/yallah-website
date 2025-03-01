@@ -1,0 +1,73 @@
+.about-us-title-2 {
+    font-family: "Inter";
+    font-size: 0.3125rem;
+    font-size: clamp(0.3125rem, -2.654816513761468rem + 12.660550458715598vw, 4.625rem);
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    margin-right: 30px;
+    position: absolute;
+    top: 80%;
+    left: 74%;
+}
+
+.stock-image {
+    max-width: 100%;
+    border-radius: 40px;
+    padding: 15px;
+}
+
+.about-hero {
+    position: relative;
+}
+
+.gradient-3 {
+    font-family: "Inter";
+    font-size: 0.3125rem;
+    font-size: clamp(0.3125rem, -2.654816513761468rem + 12.660550458715598vw, 4.625rem);    
+    font-weight: 700;
+    font-style: normal;
+    background: linear-gradient(to right, #24af5e, #bef7c5,#bcefd1, #24af5e);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .stock-image {
+        max-width: 111%;
+        border-radius: 40px;
+        padding: 15px;
+    }
+
+    .about-us-title-2 {
+        top: 75%;
+        left: 15%;
+    }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .about-us-title-2 {
+        top: 70%;
+        line-height: 40px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .about-us-title-2 {
+        top: 70%;
+        line-height: 50px;
+    }
+}
+
+
+@media only screen and (min-width: 993px) and (max-width: 1450px) {
+    .about-us-title-2 {
+        top: 80%;
+        line-height: 55px;
+    }
+}
+

@@ -1,0 +1,131 @@
+.app-image-2 {
+    width: 470px;
+    margin-right: 100px;
+    margin-top: 89px;
+}
+
+.download-title {
+    font-family: "Inter";
+    font-weight: 700;
+    font-style: normal;
+    line-height: 65px;
+    color: black;
+    text-align: center;
+    margin-left: 120px;
+    width: 500px;
+}
+
+.download-text {
+    font-family: Arial Rounded MT Bold;
+    font-size: 18px;
+    text-align: center;
+    color: rgb(186, 186, 186);
+    line-height: 23px;
+    width: 300px;
+    margin-bottom: 10px;
+    margin-left: 110px;
+}
+
+
+.download-button {
+    background-color:#000000;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1.5px;
+    border-radius: 40px;
+
+    width: 200px;
+    height: 60px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+
+    cursor: pointer;
+    transition: background-color 0.6s;
+    
+    margin-left: 10px;
+  }
+
+  .download-button:hover {
+  background-color: #ffffff;
+  border-color: #000000;
+  border-style: solid;
+  border-width: 2px;
+  color: #000000; 
+  backdrop-filter: blur(16px);
+}
+
+.download-buttons {
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    
+    .download-title {
+        padding-top: 20px;
+        line-height: 45px;
+        margin-left: 130px;
+    }
+
+    .download-text {
+        margin-left: 130px;
+    }
+
+    .download-buttons {
+        margin-left: 70px;
+    }
+    .app-image-2 {
+        margin-left: 75px;
+        width: 407px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .download-title {
+        padding-top: 20px;
+        line-height: 45px;
+        margin-left: 200px;
+    }
+
+    .download-text {
+        margin-left: 200px;
+    }
+
+    .download-buttons {
+        margin-left: 130px;
+    }
+    .app-image-2 {
+        margin-left: 100px;
+        width: 503px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .download-title {
+        padding-top: 20px;
+        line-height: 45px;
+        margin-left: 50px;
+        line-height: 60px;
+    }
+
+    .download-text {
+        margin-left: 50px;
+    }
+
+    .download-button {
+        margin: 6px;
+    }
+
+    .download-buttons {
+        margin-left: 82px;
+    }
+
+    .app-image-2 {
+        margin-top: 171px;
+        width: 403px;
+        margin-left: 30px;
+    }
+}

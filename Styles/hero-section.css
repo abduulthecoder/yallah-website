@@ -144,6 +144,11 @@
     .hero-div {
       display: block;
     }
+    .app-image {
+      width: 147px;
+      height: 280px;
+      margin-top: 40px;
+    }
 
     .stock-image-hero {
       display: none;
@@ -157,15 +162,13 @@
       padding-top: 110px;
       padding-left: 0;
     }
-
     h1 {
-      margin-top: 10px;
+      margin-top:150px;
       text-align: center;
-      margin-right: 40px;
     }
 
     .hd {
-      margin-left: 160px;
+      margin-left: 170px;
       margin-right: 0;
       text-align: center;
     }
@@ -173,6 +176,7 @@
     .hero-3 {
       display: none;
     }
+
   }
 
 

@@ -94,6 +94,7 @@
     padding: 10px;
   }
 
+  .get-started-2,
   .get-started {
     color: rgb(0, 0, 0);
     background-color:#a5fb55;
@@ -117,7 +118,7 @@
   }
 
 
-
+.get-started-2:hover,
 .get-started:hover {
   background-color: #0000005e;
   border-color: #a5fb55;
@@ -155,10 +156,10 @@
   margin-left: 10px;
 }
 
-@media (max-width: 500px) {
- .get-started {
-  padding: 16px 30px;
- }
+@media (max-width: 600px) {
+ .get-started-2 {
+    display: none;
+  }
 }
 
 

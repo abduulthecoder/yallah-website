@@ -194,19 +194,19 @@
   
   .scroll {
     padding-top: 40px;
-    gap: 8px; /* Reduced for mobile */
+    gap: 16px; /* Increased from 8px for mobile */
   }
   
   .scroll div {
-    gap: 8px; /* Reduced for mobile */
+    gap: 16px; /* Increased from 8px for mobile */
   }
   
   .services {
     height: 70px;
     min-width: 160px;
     font-size: 1rem;
-    padding: 0 16px; /* Reduced from 20px */
-    margin: 0 4px; /* Reduced from 8px */
+    padding: 0 20px; /* Restored from 16px */
+    margin: 0; /* Removed margins */
   }
   
   .services-title {
@@ -227,17 +227,17 @@
   }
   
   .scroll {
-    gap: 10px;
+    gap: 18px; /* Increased for better separation */
   }
   
   .scroll div {
-    gap: 10px;
+    gap: 18px; /* Increased for better separation */
   }
   
   .services {
     height: 75px;
     min-width: 180px;
-    margin: 0 5px;
+    margin: 0; /* Removed margins */
   }
 }
 

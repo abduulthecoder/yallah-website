@@ -1,131 +1,287 @@
+/* Services Section */
 .services-section {
-  height: 400px;
-  margin-top: 350px; 
+  min-height: 500px;
+  margin-top: 200px;
+  padding: 80px 20px;
+  position: relative;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(20, 20, 20, 0.9) 100%);
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.services-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(165, 251, 85, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* Enhanced Scroll Container */
+.scroll {
+  padding-top: 60px;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  gap: 20px;
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(0, 0, 0, 1) 15%,
+    rgba(0, 0, 0, 1) 85%,
+    transparent 100%
+  );
+  mask: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(0, 0, 0, 1) 15%,
+    rgba(0, 0, 0, 1) 85%,
+    transparent 100%
+  );
+}
+
+.scroll div {
+  white-space: nowrap;
+  animation: animate var(--t, 25s) linear infinite;
+  animation-delay: calc(var(--t, 25s) * -1);
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.scroll div:nth-child(2) {
+  animation: animate2 var(--t, 25s) linear infinite;
+  animation-delay: calc(var(--t, 25s) / -2);
+}
+
+/* Smoother animations with better timing */
+@keyframes animate {
+  0% {
+    transform: translateX(100%);
   }
-
-  .scroll {
-    padding-top: 50px;
-    position: relative;
-    display: flex;
-    overflow: hidden;
-    -webkit-mask-image: linear-gradient(
-      90deg,
-      transparent,
-      white 20%,
-      white 80%, 
-      transparent
-      );
-    mask: linear-gradient(
-      90deg,
-      transparent,
-      white 20%,
-      white 80%, 
-      transparent
-      );
+  100% {
+    transform: translateX(-100%);
   }
+}
 
-  .scroll div {
-    white-space: nowrap;
-    animation: animate var(--t) linear infinite;
-    animation-delay: calc(var(--t) * -2);
+@keyframes animate2 {
+  0% {
+    transform: translateX(0%);
   }
-
-  .scroll div:nth-child(2) {
-    animation: animate2 var(--t) linear infinite;
-    animation-delay: calc(var(--t) / -2);
+  100% {
+    transform: translateX(-200%);
   }
+}
 
-  @keyframes animate {
-    0% {
-      transform: translateX(100%);
-    }
+/* Enhanced Typography */
+.services-title {
+  font-family: "Inter", sans-serif;
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 800;
+  background: linear-gradient(135deg, #ffffff 0%, #a5fb55 50%, #dcffa0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+  margin: 0 20px 20px 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  position: relative;
+}
 
-    100% {
-      transform: translateX(-100%);
-    }
-  }
+.services-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #a5fb55, #dcffa0);
+  border-radius: 2px;
+}
 
-  @keyframes animate2 {
-    0% {
-      transform: translateX(0);
-    }
+.services-sub {
+  font-family: "Inter", sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  font-weight: 400;
+  text-align: center;
+  margin: 0 20px 40px 20px;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-    100% {
-      transform: translateX(-200%);
-    }
+/* Modern Service Cards */
+.services {
+  font-family: "Inter", sans-serif;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #000000;
+  font-size: clamp(1rem, 2vw, 1.375rem);
+  font-weight: 600;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  height: 80px;
+  min-width: 200px;
+  padding: 0 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(255, 255, 255, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 10px;
+}
+
+.services::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent 0%, rgba(165, 251, 85, 0.2) 50%, transparent 100%);
+  transition: left 0.6s ease;
+}
+
+.services:hover::before {
+  left: 100%;
+}
+
+.services:hover {
+  background: linear-gradient(135deg, #a5fb55 0%, #dcffa0 100%);
+  border-color: #a5fb55;
+  color: #000000;
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 
+    0 16px 40px rgba(165, 251, 85, 0.3),
+    0 0 0 1px rgba(165, 251, 85, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.services:active {
+  transform: translateY(-2px) scale(1.01);
+}
+
+/* Pause animation on hover for better UX */
+.scroll:hover div {
+  animation-play-state: paused;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+  .services-section {
+    margin-top: 150px;
+    padding: 60px 16px;
+    border-radius: 20px;
   }
   
-
-  .services-title {
-    font-family: "Inter";
-    font-size: 64px;
-    font-weight: 700;
-    font-style: normal;
-    color: #dadada;
-    font-size: 30px;
-    height: 70px;
-    text-align: center;
-    margin-left: 20px;
+  .scroll {
+    padding-top: 40px;
   }
-
-  .services-sub {
-    font-family: Arial Rounded MT Bold;
-    color: #dadadac4;
-    font-size: 12px;
-    height: 40px;
-    text-align: center;
-    margin-left: 20px;
-  }
-
+  
   .services {
-    font-family: Arial Rounded MT Bold;
-    background-color: white;
-    border-color: white;
-    font-size: 22px;
-    border-radius: 25px;
-    border: solid;
     height: 70px;
-    width: 180px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-    border-width: 2px;
-    transition: background-color 0.6s;
-    transition: border-color 0.5s;
-    margin: 5px;
+    min-width: 160px;
+    font-size: 1rem;
+    padding: 0 20px;
+    margin: 0 8px;
   }
-
-  .services:hover {
-    background-color: #e8fb55;
-    border-color: #e8fb55;
+  
+  .services-title {
+    margin-bottom: 16px;
   }
-
-
-@media only screen and (max-width: 600px) {
-    .services-section {
-      padding-top: 900px;
-      padding-bottom: 400px;
-    }
+  
+  .services-sub {
+    margin-bottom: 30px;
+  }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 768px) {
   .services-section {
-    padding-top: 900px;
-    padding-bottom: 300px;
+    margin-top: 180px;
+    padding: 70px 20px;
+  }
+  
+  .services {
+    height: 75px;
+    min-width: 180px;
   }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 992px) {
   .services-section {
-    padding-top: 900px;
-    padding-bottom: 300px;
+    margin-top: 200px;
+    padding: 75px 30px;
+  }
+  
+  .services {
+    height: 78px;
+    min-width: 190px;
   }
 }
 
 @media only screen and (min-width: 993px) and (max-width: 1400px) {
   .services-section {
-    padding-top: 1000px;
-    padding-bottom: 300px;
+    margin-top: 220px;
+    padding: 80px 40px;
   }
 }
 
+@media (min-width: 1401px) {
+  .services-section {
+    margin-top: 240px;
+    padding: 100px 60px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
+/* Performance optimizations */
+@media (prefers-reduced-motion: reduce) {
+  .scroll div {
+    animation-duration: 40s;
+  }
   
+  .services {
+    transition-duration: 0.2s;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .services-section {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.95) 0%, rgba(10, 10, 10, 0.98) 100%);
+  }
+  
+  .services {
+    background: rgba(255, 255, 255, 0.98);
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .services {
+    border-width: 3px;
+    border-color: #000000;
+  }
+  
+  .services:hover {
+    border-color: #a5fb55;
+  }
+}

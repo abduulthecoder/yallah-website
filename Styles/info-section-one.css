@@ -25,9 +25,12 @@
         }
 
         .info {
-            flex: 1;
-            max-width: 500px;
-        }
+           flex: 1;
+           max-width: 500px;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+         }
 
         .information-title {
             font-size: clamp(2.5rem, 5vw, 4.5rem);

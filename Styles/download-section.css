@@ -1,131 +1,293 @@
-.app-image-2 {
-    width: 480px;
-    margin-right: 100px;
-    margin-top: 129px;
-}
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-.download-title {
-    font-family: "Inter";
-    font-weight: 700;
-    font-style: normal;
-    line-height: 65px;
-    color: black;
-    text-align: center;
-    margin-left: 120px;
-    width: 500px;
-}
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #000000;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-.download-text {
-    font-family: Arial Rounded MT Bold;
-    font-size: 18px;
-    text-align: center;
-    color: rgb(186, 186, 186);
-    line-height: 23px;
-    width: 300px;
-    margin-bottom: 10px;
-    margin-left: 110px;
-}
+        .space {
+            height: 80px;
+        }
 
+        .download-section {
+            width: 100%;
+            max-width: none;
+            margin: 0;
+            padding: 40px 20px;
+        }
 
-.download-button {
-    background-color:#000000;
-    border-style: solid;
-    border-color: #000000;
-    border-width: 1.5px;
-    border-radius: 40px;
+        .download-container {
+            background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+            border-radius: 48px;
+            box-shadow: 
+                0 32px 80px rgba(255, 255, 255, 0.08),
+                0 8px 32px rgba(255, 255, 255, 0.12),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            overflow: hidden;
+            position: relative;
+            min-height: 70vh;
+            max-width: 1400px;
+            margin: 0 auto;
+            width: 100%;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+        }
 
-    width: 200px;
-    height: 60px;
-    font-size: 15px;
-    font-weight: bold;
-    color: white;
+        .download-content {
+            display: flex;
+            align-items: center;
+            min-height: 70vh;
+            position: relative;
+            width: 100%;
+        }
 
-    cursor: pointer;
-    transition: background-color 0.6s;
-    
-    margin-left: 10px;
-  }
+        .text-section {
+            flex: 1;
+            padding: 5vw 4vw;
+            z-index: 2;
+            max-width: 50%;
+            position: relative;
+        }
 
-  .download-button:hover {
-  background-color: #ffffff;
-  border-color: #000000;
-  border-style: solid;
-  border-width: 2px;
-  color: #000000; 
-  backdrop-filter: blur(16px);
-}
+        .download-title {
+            font-family: "Inter", sans-serif;
+            font-weight: 800;
+            font-size: clamp(28px, 4vw, 56px);
+            line-height: 1.1;
+            color: #000000;
+            margin-bottom: 28px;
+            letter-spacing: -0.02em;
+            position: relative;
+        }
 
-.download-buttons {
-    margin-top: 40px;
-    margin-left: 50px;
-}
+        .download-text {
+            font-family: "Inter", sans-serif;
+            font-size: clamp(16px, 1.5vw, 22px);
+            line-height: 1.7;
+            color: #2c2c2c;
+            margin-bottom: 48px;
+            max-width: 90%;
+            font-weight: 400;
+        }
 
+        .download-buttons {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
 
+        .ios-button {
+            display: inline-block;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border-radius: 16px;
+            overflow: hidden;
+            position: relative;
+        }
 
-@media only screen and (max-width: 600px) {
-    
-    .download-title {
-        padding-top: 20px;
-        line-height: 45px;
-        margin-left: 130px;
-    }
+        .ios-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(145deg, rgba(255,255,255,0.2), rgba(255,255,255,0.05));
+            border-radius: 16px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 1;
+        }
 
-    .download-text {
-        margin-left: 130px;
-    }
+        .ios-button:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+        }
 
-    .download-buttons {
-        margin-left: 70px;
-    }
-    .app-image-2 {
-        margin-left: 75px;
-        width: 407px;
-    }
-}
+        .ios-button:hover::before {
+            opacity: 1;
+        }
 
-@media only screen and (min-width: 601px) and (max-width: 768px) {
-    .download-title {
-        padding-top: 20px;
-        line-height: 45px;
-        margin-left: 200px;
-    }
+        .ios-button img {
+            height: 64px;
+            width: auto;
+            display: block;
+            position: relative;
+            z-index: 2;
+        }
 
-    .download-text {
-        margin-left: 200px;
-    }
+        .android-button {
+            background: linear-gradient(145deg, #f1f3f4 0%, #e8eaed 100%);
+            border: 2px solid #dadce0;
+            border-radius: 16px;
+            padding: 18px 28px;
+            font-family: "Inter", sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            color: #5f6368;
+            cursor: not-allowed;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            height: 64px;
+            position: relative;
+            overflow: hidden;
+        }
 
-    .download-buttons {
-        margin-left: 130px;
-    }
-    .app-image-2 {
-        margin-left: 100px;
-        width: 503px;
-    }
-}
+        .android-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            transition: left 2s ease;
+        }
 
-@media only screen and (min-width: 769px) and (max-width: 992px) {
-    .download-title {
-        padding-top: 20px;
-        line-height: 45px;
-        margin-left: 50px;
-        line-height: 60px;
-    }
+        .android-button:hover::before {
+            left: 100%;
+        }
 
-    .download-text {
-        margin-left: 50px;
-    }
+        .android-button .emoji {
+            font-size: 20px;
+            opacity: 0.7;
+        }
 
-    .download-button {
-        margin: 6px;
-    }
+        .image-section {
+            flex: 1;
+            position: relative;
+            height: 70vh;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding-bottom: 0;
+            max-width: 50%;
+        }
 
-    .download-buttons {
-        margin-left: 82px;
-    }
+        .image-section::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(102, 126, 234, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            z-index: 1;
+        }
 
-    .app-image-2 {
-        margin-top: 171px;
-        width: 403px;
-        margin-left: 30px;
-    }
-}
+        .app-image-2 {
+            width: min(25vw, 340px);
+            height: auto;
+            position: relative;
+            z-index: 3;
+            transform: translateY(50px);
+            filter: drop-shadow(0 24px 48px rgba(0, 0, 0, 0.3));
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .app-image-2:hover {
+            transform: translateY(45px) scale(1.03) rotate(-1deg);
+        }
+
+        /* Responsive Design */
+        @media only screen and (max-width: 768px) {
+            .download-container {
+                min-height: 90vh;
+            }
+
+            .download-content {
+                flex-direction: column;
+                min-height: 90vh;
+            }
+
+            .text-section {
+                padding: 6vw 5vw 4vw;
+                text-align: center;
+                max-width: 100%;
+            }
+
+            .download-title {
+                font-size: clamp(24px, 6vw, 36px);
+                margin-bottom: 16px;
+            }
+
+            .download-text {
+                font-size: clamp(14px, 3vw, 18px);
+                margin-bottom: 30px;
+                max-width: 100%;
+            }
+
+            .download-buttons {
+                justify-content: center;
+                gap: 12px;
+            }
+
+            .image-section {
+                height: 40vh;
+                padding: 0 20px;
+                max-width: 100%;
+            }
+
+            .app-image-2 {
+                width: min(40vw, 200px);
+                transform: translateY(20px);
+            }
+
+            .app-image-2:hover {
+                transform: translateY(15px) scale(1.02);
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .download-section {
+                padding: 20px 10px;
+            }
+
+            .download-container {
+                border-radius: 32px;
+            }
+
+            .text-section {
+                padding: 8vw 6vw 4vw;
+            }
+
+            .download-title {
+                font-size: clamp(20px, 7vw, 28px);
+            }
+
+            .download-text {
+                font-size: clamp(12px, 4vw, 16px);
+            }
+
+            .ios-button img {
+                height: 52px;
+            }
+
+            .android-button {
+                height: 52px;
+                font-size: 13px;
+                padding: 12px 20px;
+            }
+        }
+
+        @media only screen and (min-width: 1600px) {
+            .download-container {
+                max-width: 1600px;
+            }
+            
+            .text-section {
+                padding: 4vw 3vw;
+            }
+        }

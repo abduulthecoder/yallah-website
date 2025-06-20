@@ -66,7 +66,7 @@
 
         .app-image {
             grid-column: 2;
-            width: clamp(280px, 30vw, 377px);
+            width: clamp(380px, 30vw, 477px);
             height: auto;
             aspect-ratio: 377/680;
             object-fit: contain;

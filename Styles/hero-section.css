@@ -66,9 +66,9 @@
 
         .app-image {
             grid-column: 2;
-            width: clamp(380px, 30vw, 477px);
+            width: clamp(480px, 30vw, 577px);
             height: auto;
-            aspect-ratio: 377/680;
+            aspect-ratio: 477/780;
             object-fit: contain;
             filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.4));
             transition: transform 0.3s ease, filter 0.3s ease;
